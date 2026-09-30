@@ -18,6 +18,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
 
+//função do login
     async function handleLogin() {
         if (!email.trim() || !password.trim())
             return Alert.alert('Atenção', 'Informe seu email e senha.');
