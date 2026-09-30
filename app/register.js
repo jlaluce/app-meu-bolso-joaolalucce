@@ -13,7 +13,7 @@ export default function Cadastro() {
 
     const router = useRouter();
 
-    const handleRegister = () => {
+    async function handleRegister (){
         if (!email.trim() || !password.trim() || !confirmPassword.trim()) {
                 Alert.alert('Atenção', 'Preencha todos os campos.');}
 
